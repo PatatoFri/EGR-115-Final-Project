@@ -1,0 +1,30 @@
+frontleftseat=str2double(input('Input the weight in the front left seat in pounds:','s'));
+while isempty(frontleftseat) || isnan(frontleftseat) ||frontleftseat < 0 || mod(frontleftseat,1) ~= 0 %<SM:WHILE>
+    fprintf('Try again\n')
+    frontleftseat=str2double(input('Input the weight in the front left seat in pounds:','s'));
+end
+frontrightseat=str2double(input('Input the weight in the front right seat in pounds:','s'));
+while isempty(frontrightseat) || frontrightseat < 0 || mod(frontrightseat,1) ~= 0
+    fprintf('Try again\n')
+    frontrightseat=input('Input the weight in the front right seat in pounds:');
+end
+backleftseat=str2double(input('Input the weight in the back left seat in pounds:','s'));
+while isempty(backleftseat) || backleftseat < 0 || mod(backleftseat,1) ~= 0
+    fprintf('Try again\n')
+    backleftseat=input('Input the weight in the back left seat in pounds:','s');
+end
+backrightseat=str2double(input('Input the weight in the back right seat in pounds:','s');
+while isempty(backrightseat) || backrightseat < 0 || mod(backrightseat,1) ~= 0
+    fprintf('Try again\n')
+    backrightseat=input('Input the weight in the back right seat in pounds:');
+end
+baggage=str2double(input('Input the weight in the baggage compartment in pounds:','s'));
+while isempty(baggage) || isnan(baggage) || baggage < 0 || mod(baggage,1) ~= 0
+    fprintf('Try again\n')
+    baggage=input('Input the weight in the baggage compartment in pounds:');
+end
+fuel=str2double(input('input the number of gallons of fuel you will take:','s'));
+while isempty(fuel) || isnan(fuel) || fuel < 0 || fuel > 50 || mod(fuel,1) ~= 0
+    fprintf('Try again\n')
+    fuel=str2double(input('input the number of gallons of fuel you will take:','s'));
+end
